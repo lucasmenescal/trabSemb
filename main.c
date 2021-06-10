@@ -27,3 +27,9 @@ int main(void)
   printf("10 valores inteiros aleatorios foram gerados com sucesso!...\n");
   
 }
+
+  t = clock(); //armazena tempo
+ bubbleSort(vetor);
+ t = clock() - t; //tempo final - tempo inicial
+ //imprime o tempo na tela
+ printf("Tempo de execucao: %lf", ((double)t)/((CLOCKS_PER_SEC/1000))); //conversão para double
